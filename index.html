@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shanmugha — Portfolio</title>
+
+  <!-- Google Font (safe, widely available) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Shanmugha — Full Stack & creative frontend. Projects: Todo App (Flask), UI experiments, and more.">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-left">
+      <div class="brand">SHANMUGHA</div>
+      <div class="tag">Full-Stack • UI • Builder</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌗</button>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero">
+    <div class="hero-left">
+      <h1>Hello — I'm <span class="accent">Shanmugha</span></h1>
+      <p class="lead">2nd Year IT • Aspiring Full-Stack Developer. I build clean, polished web apps and interactive UIs.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="#projects">See Projects</a>
+        <a class="btn ghost" href="#contact">Contact Me</a>
+      </div>
+      <div class="meta">
+        <span>📍 Panimalar Engineering College</span>
+        <span>•</span>
+        <span>📧 <a href="mailto:your.email@example.com" class="link">your.email@example.com</a></span>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="card-visual">
+        <div class="card-top">
+          <div class="chip">Full-Stack</div>
+          <div class="chip">Flask</div>
+          <div class="chip">SQLite</div>
+        </div>
+        <div class="card-body">
+          <h3>Featured Project</h3>
+          <p class="card-text">Todo List App — add/delete tasks, stored with Flask + SQLite. Deployed link & source in Projects.</p>
+          <a class="small-link" href="#projects">View projects →</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="grid">
+      <article class="project">
+        <div class="proj-header">
+          <h3>Todo List App</h3>
+          <span class="tag small">Full-Stack</span>
+        </div>
+        <p>Built with HTML/CSS/JS frontend and Python (Flask) backend + SQLite. Add, delete and persist tasks. Deployed on Render (live link).</p>
+        <div class="proj-meta">
+          <a class="proj-btn" href="#" target="_blank" rel="noopener">Live</a>
+          <a class="proj-btn ghost" href="https://github.com/YOUR_USERNAME/todo_app" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="proj-header">
+          <h3>Portfolio Website (This)</h3>
+          <span class="tag small">Frontend</span>
+        </div>
+        <p>Modern responsive portfolio built with HTML, CSS, and vanilla JS. Clean design, animations, dark & light theme toggle.</p>
+        <div class="proj-meta">
+          <a class="proj-btn" href="#" target="_blank" rel="noopener">Live</a>
+          <a class="proj-btn ghost" href="#" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="proj-header">
+          <h3>Mini Game (Coming)</h3>
+          <span class="tag small">JavaScript</span>
+        </div>
+        <p>Planned: simple interactive game (RPS or Memory). Will add soon to the portfolio.</p>
+        <div class="proj-meta">
+          <a class="proj-btn disabled" href="#">Soon</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="chips">
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Python</span>
+      <span class="chip">Flask</span>
+      <span class="chip">SQLite</span>
+      <span class="chip">Git & GitHub</span>
+      <span class="chip">Render / Netlify</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Say hi</h3>
+        <p>Send a quick message or email: <a href="mailto:your.email@example.com" class="link">your.email@example.com</a></p>
+      </div>
+      <form class="contact-card form" onsubmit="handleContact(event)">
+        <h3>Quick message</h3>
+        <input id="name" placeholder="Your name" required>
+        <input id="email" type="email" placeholder="Your email" required>
+        <textarea id="message" placeholder="Your message" rows="4" required></textarea>
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>© <span id="year"></span> Shanmugha — Built with ❤</div>
+    <div class="footer-links">
+      <a class="link" href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
+      <a class="link" href="#" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
